@@ -1,0 +1,27 @@
+﻿
+s	S
+t	T
+c	K
+k	K
+h	H
+r	R
+b	P
+q	Q
+th	ST
+kh	SQ
+g	SP
+gh	SP
+tr	TK
+ng	TQ
+ngh	TQ
+gi	KQ
+l 	KH
+ch	HQ
+nh	HR
+m	RQ
+đ	RP
+v	PQ
+ph	STQ
+d	SPQ
+n	TKQ
+x	KHQ

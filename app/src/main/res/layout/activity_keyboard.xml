@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".KeyboardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="260dp"
+            android:layout_height="45dp"
+            android:text=""
+            android:gravity="bottom"
+            android:background="@drawable/border_textview"
+            android:layout_marginEnd="50dp" />
+
+        <TextView
+            android:id="@+id/display_view"
+            android:layout_width="230dp"
+            android:layout_height="45dp"
+            android:background="@drawable/border_textview"/>
+    </LinearLayout>
+
+    <com.example.keyboardproject.KeyboardView
+        android:id="@+id/keyboard_view"
+        android:layout_width="1863dp"
+        android:layout_height="wrap_content"></com.example.keyboardproject.KeyboardView>
+
+
+</LinearLayout>
