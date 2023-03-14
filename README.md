@@ -3,7 +3,7 @@
 
 ## Instructions for setting up on the computer:
 
-- Clone source code project from branch "master" into project in Android Studio and run app.
+- Clone source code project from branch "main" into project in Android Studio and run app.
 
 ## Instructions for setting up on the phone:
 
