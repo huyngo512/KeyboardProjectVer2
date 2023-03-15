@@ -73,10 +73,9 @@ public class KeyboardView extends View {
         listButton.add(new CustomButton("E", (x + 3 * radius), (float) (y + radius * Math.sqrt(3)), 1, 6, "#1E90FF", "#87CEFA"));
 
         x -= (6.5) * radius;
-        y += 4 * radius;
-        listButton.add(new CustomButton("N", (x + radius), (float) (y - radius * Math.sqrt(3)), 3, 0, "#FFFF00", "#F0E68C"));
-        listButton.add(new CustomButton("H", (x + 3 * radius), (float) (y - radius * Math.sqrt(3)), 3, 1, "#FFFF00", "#F0E68C"));
-        listButton.add(new CustomButton("S", (x + 2 * radius), y, 3, 2, "#FFFF00", "#F0E68C"));
+        listButton.add(new CustomButton("N", (x + radius), (float) (y + radius * Math.sqrt(3)), 3, 0, "#FFFF00", "#F0E68C"));
+        listButton.add(new CustomButton("H", (x + 3 * radius), (float) (y + radius * Math.sqrt(3)), 3, 1, "#FFFF00", "#F0E68C"));
+        listButton.add(new CustomButton("S", (x + 2 * radius), (float)(y+2*radius*Math.sqrt(3)), 3, 2, "#FFFF00", "#F0E68C"));
     }
 
     @SuppressLint("ClickableViewAccessibility")
