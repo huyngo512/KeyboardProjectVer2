@@ -38,7 +38,7 @@
     <com.example.keyboardproject.KeyboardView
         android:id="@+id/keyboard_view"
         android:layout_width="1863dp"
-        android:layout_height="wrap_content"></com.example.keyboardproject.KeyboardView>
+        android:layout_height="wrap_content" />
 
 
 </LinearLayout>

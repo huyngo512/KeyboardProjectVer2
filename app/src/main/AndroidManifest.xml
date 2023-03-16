@@ -14,7 +14,7 @@
         android:theme="@style/Theme.KeyboardProject"
         tools:targetApi="31">
         <activity
-            android:name=".KeyboardActivity"
+            android:name=".HomeActivity"
             android:screenOrientation="landscape"
             android:exported="true">
             <intent-filter>
@@ -22,6 +22,11 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".KeyboardActivity"
+            android:exported="false"
+            android:screenOrientation="landscape">
         </activity>
     </application>
 

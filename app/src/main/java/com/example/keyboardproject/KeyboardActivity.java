@@ -54,7 +54,6 @@ public class KeyboardActivity extends AppCompatActivity implements View.OnTouchL
         sharedPreferences_amchinh_rule = getSharedPreferences(getApplicationContext().getPackageName() + "." + "amchinh", Context.MODE_PRIVATE);
         sharedPreferences_amcuoi_rule = getSharedPreferences(getApplicationContext().getPackageName() + "." + "amcuoi", Context.MODE_PRIVATE);
         sharedPreferences_tailieu_rule = getSharedPreferences(getApplicationContext().getPackageName() + "." + "dictionary", Context.MODE_PRIVATE);
-        SharedPreferences.Editor edit = sharedPreferences_tailieu_rule.edit();
 
         sharedPreferences_amdau_data = getSharedPreferences(getApplicationContext().getPackageName() + "." + "amdau.data", Context.MODE_PRIVATE);
         sharedPreferences_amchinh_data = getSharedPreferences(getApplicationContext().getPackageName() + "." + "amchinh.data", Context.MODE_PRIVATE);
@@ -64,91 +63,6 @@ public class KeyboardActivity extends AppCompatActivity implements View.OnTouchL
         sharedPreferences_amdau_code = getSharedPreferences(getApplicationContext().getPackageName() + "." + "amdau.code", Context.MODE_PRIVATE);
         sharedPreferences_amchinh_code = getSharedPreferences(getApplicationContext().getPackageName() + "." + "amchinh.code", Context.MODE_PRIVATE);
         sharedPreferences_amcuoi_code = getSharedPreferences(getApplicationContext().getPackageName() + "." + "amcuoi.code", Context.MODE_PRIVATE);
-
-        /*for (int i = 1; i <= 26; i++) {
-            for (int j = 1; j <= 172; j++) {
-                for (int v = 1; v <= 12; v++) {
-                    String amdau = sharedPreferences_amdau_data.getString(String.valueOf(i), "").trim();
-                    String amchinh = sharedPreferences_amchinh_data.getString(String.valueOf(j), "").trim();
-                    String amcuoi = sharedPreferences_amcuoi_data.getString(String.valueOf(v), "").trim();
-
-                    String code1 = sharedPreferences_amdau_code.getString(String.valueOf(i), "").trim();
-                    String code2 = sharedPreferences_amchinh_code.getString(String.valueOf(j), "").trim();
-                    String code3 = sharedPreferences_amcuoi_code.getString(String.valueOf(v), "").trim();
-
-                    String temp = amdau.concat(amchinh).concat(amcuoi).trim();
-                    if (sharedPreferences_tailieu_rule.getString(temp, "").equals("true")) {
-                        String tmp = code1.concat(code2).concat(code3);
-                        System.out.println(tmp + "\t" + temp);
-                        edit.putString(temp, "edit");
-                    }
-
-                }
-            }
-        }
-        edit.apply();
-        for (int i = 1; i <= 26; i++) {
-            for (int j = 1; j <= 172; j++) {
-                String amdau = sharedPreferences_amdau_data.getString(String.valueOf(i), "").trim();
-                String amchinh = sharedPreferences_amchinh_data.getString(String.valueOf(j), "").trim();
-
-                String code1 = sharedPreferences_amdau_code.getString(String.valueOf(i), "").trim();
-                String code2 = sharedPreferences_amchinh_code.getString(String.valueOf(j), "").trim();
-
-                String temp = amdau.concat(amchinh).trim();
-                if (sharedPreferences_tailieu_rule.getString(temp, "").equals("true")) {
-                    String tmp = code1.concat(code2).concat("-");
-                    System.out.println(tmp + "\t" + temp);
-                    edit.putString(temp, "edit");
-                }
-
-
-            }
-        }
-        edit.apply();
-        for (int j = 1; j <= 172; j++) {
-            String amchinh = sharedPreferences_amchinh_data.getString(String.valueOf(j), "").trim();
-
-            String code2 = sharedPreferences_amchinh_code.getString(String.valueOf(j), "").trim();
-
-            String temp = amchinh.trim();
-            if (sharedPreferences_tailieu_rule.getString(temp, "").equals("true")) {
-                String tmp = code2.concat("-");
-                System.out.println(tmp + "\t" + temp);
-                edit.putString(temp, "edit");
-            }
-
-
-        }
-        edit.apply();
-        for (int j = 1; j <= 172; j++) {
-            for (int v = 1; v <= 12; v++) {
-                String amchinh = sharedPreferences_amchinh_data.getString(String.valueOf(j), "").trim();
-                String amcuoi = sharedPreferences_amcuoi_data.getString(String.valueOf(v), "").trim();
-
-                String code2 = sharedPreferences_amchinh_code.getString(String.valueOf(j), "").trim();
-                String code3 = sharedPreferences_amcuoi_code.getString(String.valueOf(v), "").trim();
-
-                String temp = amchinh.concat(amcuoi).trim();
-                if (sharedPreferences_tailieu_rule.getString(temp, "").equals("true")) {
-
-                    String tmp = code2.concat(code3);
-                    System.out.println(tmp + "\t" + temp);
-                    edit.putString(temp, "edit");
-                }
-            }
-        }
-        edit.apply();
-        int v = 0;
-        for (int i = 1; i <= 6897; i++) {
-            String tmp = sharedPreferences_tailieu_data.getString(String.valueOf(i), "");
-            String code = sharedPreferences_tailieu_rule.getString(tmp, "");
-            if (code.equals("edit")) {
-                v++;
-            }
-        }
-        //System.out.println(v);
-        */
 
     }
 
